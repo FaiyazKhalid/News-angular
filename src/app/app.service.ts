@@ -9,7 +9,7 @@ export class HackerNewsService {
   ) {}
 
   getNews() {
-    return this.http.get(`https://hn.algolia.com/api/v1/search_by_date?query=nodejs&tags=story`)
+    return this.http.get(`https://advocatespedia.com/api.php?hidebots=1&days=7&limit=50&hidecategorization=1&action=feedrecentchanges&feedformat=atom`)
     .map((res:Response) => res.json());
   }
 
